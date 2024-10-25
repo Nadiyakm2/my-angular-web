@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [SlicePipe,RouterLink],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
@@ -17,8 +17,7 @@ export class HomeComponent {
 
 
   ngOnInit() {
-    this.api.getData().subscribe(
-      (data: any) => {
+    this.api.getData().subscribe((data: any) => {
       this.products = data;
     })
   }

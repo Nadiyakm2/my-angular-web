@@ -1,15 +1,16 @@
-li{
-    list-style: none;
-    cursor: pointer;
+.nav-link {
+  color: black; /* Default link color */
+  text-decoration: none; /* Remove underline */
 }
 
-li:hover{
-  color: #e6e06e;
-  /* list-style:square; */
+.nav-link:hover {
+  color: #716f3c; /* Change color on hover */
 }
 
-nav{
-    background-color: rgb(31, 146, 175);
-    color: #fff300;
-    
+.nav-link.active {
+  color: white; /* Change to white when active */
+}
+
+nav {
+  background-color: rgb(188, 123, 39); /* Navbar background color */
 }
